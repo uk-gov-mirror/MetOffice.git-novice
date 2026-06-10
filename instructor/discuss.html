@@ -47,6 +47,7 @@
           </ul></li>
       </div>
 
+
       <div class="dropdown" id="instructor-dropdown">
         <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
           <i aria-hidden="true" class="icon" data-feather="eye"></i> Instructor View <i data-feather="chevron-down"></i>
@@ -431,7 +432,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Discussion</h1>
-        <p>Last updated on 2024-12-19 |
+        <p>Last updated on 2026-06-10 |
 
         <a href="https://github.com/metoffice/git-novice/edit/main/learners/discuss.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -495,23 +496,23 @@ available options are described in the manual:</p>
     prune = true
 [pull]
     ff = only</code></pre>
-<table class="table"><colgroup><col width="24%"><col width="7%"><col width="67%"></colgroup><thead><tr class="header"><th>Setting</th>
+<table class="table"><colgroup><col width="24%"><col width="7%"><col width="67%"></colgroup><thead><tr><th>Setting</th>
 <th>Value</th>
 <th>Justification</th>
-</tr></thead><tbody><tr class="odd"><td>merge.ff</td>
+</tr></thead><tbody><tr><td>merge.ff</td>
 <td>false</td>
 <td>Make <code>git merge</code> always a “true merge”</td>
-</tr><tr class="even"><td>merge.conflictStyle</td>
+</tr><tr><td>merge.conflictStyle</td>
 <td>diff3</td>
 <td>Add common ancestor to conflict markers</td>
-</tr><tr class="odd"><td>mergetool.keepBackup</td>
+</tr><tr><td>mergetool.keepBackup</td>
 <td>false</td>
 <td>Tidy <code>*.orig</code> files when <code>mergetool</code>
 finishes</td>
-</tr><tr class="even"><td>fetch.prune</td>
+</tr><tr><td>fetch.prune</td>
 <td>true</td>
 <td>Automatically delete references to deleted remote branches</td>
-</tr><tr class="odd"><td>pull.ff</td>
+</tr><tr><td>pull.ff</td>
 <td>only</td>
 <td>Make <code>git pull</code> only fast-forward</td>
 </tr></tbody></table><p>These settings will be explained in later episodes and in the follow
@@ -636,6 +637,7 @@ have:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="undoing-git-configuration-changes" class="callout-inner">
 <h3 class="callout-title">Undoing Git Configuration Changes</h3>
 <div class="callout-content">
@@ -988,6 +990,7 @@ root directory.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="ignoring-nested-files-challenge-problem" class="callout-inner">
 <h3 class="callout-title">Ignoring Nested Files: Challenge Problem</h3>
 <div class="callout-content">
@@ -1061,15 +1064,17 @@ results/*             # ignore the files in the results directory
 	
         | <a href="https://github.com/metoffice/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/metoffice/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/metoffice/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
-			</div>
-			<div class="col-md-6">
+        <p>
+        <a href="https://github.com/metoffice/git-novice/blob/main/" class="external-link">Cite</a>
+        | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+		</div>
+		<div class="col-md-6">
 
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/astroDimitrios/sandpaper/tree/4aa05d502eeb4de64fbcd430b468e22dd4952718" class="external-link">sandpaper (0.16.11)</a>, <a href="https://github.com/carpentries/pegboard/tree/5e0d711121a581777d83cf270e298c933f112d52" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/astroDimitrios/varnish/tree/7c1ab925aa2bd2e6769ba68caa820231306b105b" class="external-link">varnish (1.0.5)</a></p>
-			</div>
+        <p>Built with <a href="https://github.com/astroDimitrios/sandpaper/tree/34be278fccd935ffe3c42836c517f6efc8f64028" class="external-link">sandpaper (0.20.1.9000)</a>, <a href="https://github.com/carpentries/pegboard/tree/7dc6acfdd6233c0d124a0ecf288325edc40dd96d" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/astroDimitrios/varnish/tree/5c2d7048e460689fcd39f676f7b08844bf21e676" class="external-link">varnish (1.0.9)</a></p>
+		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
 		<a href="#top">
@@ -1079,10 +1084,10 @@ results/*             # ignore the files in the results directory
   <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "TrainingMaterial",
+  "@type": "LearningResource",
   "@id": "https://swcarpentry.github.io/git-novice/instructor/discuss.html",
   "inLanguage": "en",
-  "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+  "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries",
   "name": "Discussion",
@@ -1090,8 +1095,8 @@ results/*             # ignore the files in the results directory
   "url": "https://swcarpentry.github.io/git-novice/instructor/discuss.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/discuss.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2024-12-19",
-  "datePublished": "2025-04-15"
+  "dateModified": "2026-06-10",
+  "datePublished": "2026-06-10"
 }
 
   </script><script>

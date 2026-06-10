@@ -47,6 +47,7 @@
           </ul></li>
       </div>
 
+
       <div class="dropdown" id="instructor-dropdown">
         <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
           <i aria-hidden="true" class="icon" data-feather="eye"></i> Instructor View <i data-feather="chevron-down"></i>
@@ -443,7 +444,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Setting Up Git</h1>
-        <p>Last updated on 2025-04-15 |
+        <p>Last updated on 2026-06-10 |
 
         <a href="https://github.com/metoffice/git-novice/edit/main/episodes/02-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -514,16 +515,18 @@ instructions for keeping your email address private</a>.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="keeping-your-email-private" class="callout-inner">
 <h3 class="callout-title">Keeping your email private</h3>
 <div class="callout-content">
 <p>If you elect to use a private email address with GitHub, then use
 GitHub’s no-reply email address for the <code>user.email</code> value.
-It looks like <code>ID+username@users.noreply.github.com</code>. You can
-look up your own address in your GitHub <a href="https://github.com/settings/emails" class="external-link">email settings</a>. Check with
-your instructor whether your organisation has a policy on keeping emails
-private. At the Met Office it is up to you whether to keep your email
-address private.</p>
+Your <code>noreply</code> email address will end in
+<code>@users.noreply.github.com</code>. You can look up your own address
+in your GitHub <a href="https://github.com/settings/emails" class="external-link">email
+settings</a>. Check with your instructor whether your organisation has a
+policy on keeping emails private. At the Met Office it is up to you
+whether to keep your email address private.</p>
 </div>
 </div>
 </div>
@@ -532,39 +535,39 @@ address private.</p>
 <h3 id="text-editor">Text Editor<a class="anchor" aria-label="anchor" href="#text-editor"></a></h3>
 <p>To set your preferred text editor, find the correct configuration
 command from this table:</p>
-<table class="table"><colgroup><col width="27%"><col width="72%"></colgroup><thead><tr class="header"><th align="left">Editor</th>
+<table class="table"><colgroup><col width="27%"><col width="72%"></colgroup><thead><tr><th align="left">Editor</th>
 <th align="left">Configuration command</th>
-</tr></thead><tbody><tr class="odd"><td align="left">Atom</td>
+</tr></thead><tbody><tr><td align="left">Atom</td>
 <td align="left"><code>$ git config --global core.editor "atom --wait"</code></td>
-</tr><tr class="even"><td align="left">nano</td>
+</tr><tr><td align="left">nano</td>
 <td align="left"><code>$ git config --global core.editor "nano -w"</code></td>
-</tr><tr class="odd"><td align="left">BBEdit (Mac, with command line tools)</td>
+</tr><tr><td align="left">BBEdit (Mac, with command line tools)</td>
 <td align="left"><code>$ git config --global core.editor "bbedit -w"</code></td>
-</tr><tr class="even"><td align="left">Sublime Text (Mac)</td>
+</tr><tr><td align="left">Sublime Text (Mac)</td>
 <td align="left"><code>$ git config --global core.editor "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w"</code></td>
-</tr><tr class="odd"><td align="left">Sublime Text (Win, 32-bit install)</td>
+</tr><tr><td align="left">Sublime Text (Win, 32-bit install)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublime_text.exe' -w"</code></td>
-</tr><tr class="even"><td align="left">Sublime Text (Win, 64-bit install)</td>
+</tr><tr><td align="left">Sublime Text (Win, 64-bit install)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"</code></td>
-</tr><tr class="odd"><td align="left">Notepad (Win)</td>
+</tr><tr><td align="left">Notepad (Win)</td>
 <td align="left"><code>$ git config --global core.editor "c:/Windows/System32/notepad.exe"</code></td>
-</tr><tr class="even"><td align="left">Notepad++ (Win, 32-bit install)</td>
+</tr><tr><td align="left">Notepad++ (Win, 32-bit install)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
-</tr><tr class="odd"><td align="left">Notepad++ (Win, 64-bit install)</td>
+</tr><tr><td align="left">Notepad++ (Win, 64-bit install)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
-</tr><tr class="even"><td align="left">Kate (Linux)</td>
+</tr><tr><td align="left">Kate (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "kate"</code></td>
-</tr><tr class="odd"><td align="left">Gedit (Linux)</td>
+</tr><tr><td align="left">Gedit (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "gedit --wait --new-window"</code></td>
-</tr><tr class="even"><td align="left">Scratch (Linux)</td>
+</tr><tr><td align="left">Scratch (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "scratch-text-editor"</code></td>
-</tr><tr class="odd"><td align="left">Emacs</td>
+</tr><tr><td align="left">Emacs</td>
 <td align="left"><code>$ git config --global core.editor "emacs"</code></td>
-</tr><tr class="even"><td align="left">Vim</td>
+</tr><tr><td align="left">Vim</td>
 <td align="left"><code>$ git config --global core.editor "vim"</code></td>
-</tr><tr class="odd"><td align="left">gVim</td>
+</tr><tr><td align="left">gVim</td>
 <td align="left"><code>$ git config --global core.editor "gvim -f"</code></td>
-</tr><tr class="even"><td align="left">VS Code</td>
+</tr><tr><td align="left">VS Code</td>
 <td align="left"><code>$ git config --global core.editor "code --wait"</code></td>
 </tr></tbody></table><p>It is possible to reconfigure the text editor for Git whenever you
 want to change it.</p>
@@ -572,6 +575,7 @@ want to change it.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="alert-triangle"></i>
 </div>
+<span class="callout-header">Caution</span>
 <div id="nedit-not-available-on-azure-spice" class="callout-inner">
 <h3 class="callout-title">Nedit not available on Azure Spice</h3>
 <div class="callout-content">
@@ -586,6 +590,7 @@ above is Gedit.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="exiting-vim" class="callout-inner">
 <h3 class="callout-title">Exiting Vim</h3>
 <div class="callout-content">
@@ -615,6 +620,7 @@ use.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="history-of-main" class="callout-inner">
 <h3 class="callout-title">History of <code>main</code>
 </h3>
@@ -667,6 +673,7 @@ has details on more recommended settings.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="proxy" class="callout-inner">
 <h3 class="callout-title">Proxy</h3>
 <div class="callout-content">
@@ -692,6 +699,7 @@ the case, you may also need to tell Git about the proxy:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="git-help-and-manual" class="callout-inner">
 <h3 class="callout-title">Git Help and Manual</h3>
 <div class="callout-content">
@@ -722,8 +730,8 @@ commands and further resources of the Git manual typing:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
+<span class="callout-header">Key Points</span>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>Use <code>git config</code> with the <code>--global</code> option to
 configure a user name, email address, editor, and other preferences once
@@ -760,15 +768,17 @@ per machine.</li>
 	
         | <a href="https://github.com/metoffice/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/metoffice/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/metoffice/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
-			</div>
-			<div class="col-md-6">
+        <p>
+        <a href="https://github.com/metoffice/git-novice/blob/main/" class="external-link">Cite</a>
+        | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+		</div>
+		<div class="col-md-6">
 
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/astroDimitrios/sandpaper/tree/4aa05d502eeb4de64fbcd430b468e22dd4952718" class="external-link">sandpaper (0.16.11)</a>, <a href="https://github.com/carpentries/pegboard/tree/5e0d711121a581777d83cf270e298c933f112d52" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/astroDimitrios/varnish/tree/7c1ab925aa2bd2e6769ba68caa820231306b105b" class="external-link">varnish (1.0.5)</a></p>
-			</div>
+        <p>Built with <a href="https://github.com/astroDimitrios/sandpaper/tree/34be278fccd935ffe3c42836c517f6efc8f64028" class="external-link">sandpaper (0.20.1.9000)</a>, <a href="https://github.com/carpentries/pegboard/tree/7dc6acfdd6233c0d124a0ecf288325edc40dd96d" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/astroDimitrios/varnish/tree/5c2d7048e460689fcd39f676f7b08844bf21e676" class="external-link">varnish (1.0.9)</a></p>
+		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
 		<a href="#top">
@@ -778,10 +788,10 @@ per machine.</li>
   <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "TrainingMaterial",
+  "@type": "LearningResource",
   "@id": "https://swcarpentry.github.io/git-novice/instructor/02-setup.html",
   "inLanguage": "en",
-  "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+  "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries",
   "name": "Setting Up Git",
@@ -789,8 +799,8 @@ per machine.</li>
   "url": "https://swcarpentry.github.io/git-novice/instructor/02-setup.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/02-setup.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2025-04-15",
-  "datePublished": "2025-04-15"
+  "dateModified": "2026-06-10",
+  "datePublished": "2026-06-10"
 }
 
   </script><script>

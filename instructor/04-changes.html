@@ -47,6 +47,7 @@
           </ul></li>
       </div>
 
+
       <div class="dropdown" id="instructor-dropdown">
         <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
           <i aria-hidden="true" class="icon" data-feather="eye"></i> Instructor View <i data-feather="chevron-down"></i>
@@ -435,7 +436,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Tracking Changes</h1>
-        <p>Last updated on 2025-01-20 |
+        <p>Last updated on 2026-06-10 |
 
         <a href="https://github.com/metoffice/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -631,6 +632,7 @@ language.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="alert-triangle"></i>
 </div>
+<span class="callout-header">Caution</span>
 <div id="using-git-add-." class="callout-inner">
 <h3 class="callout-title">Using <code>git add .</code>
 </h3>
@@ -686,6 +688,7 @@ nothing to commit, working tree clean</code></pre>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="where-are-my-changes" class="callout-inner">
 <h3 class="callout-title">Where Are My Changes?</h3>
 <div class="callout-content">
@@ -789,6 +792,7 @@ line.</li>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="git-difftool" class="callout-inner">
 <h3 class="callout-title">git difftool</h3>
 <div class="callout-content">
@@ -872,6 +876,7 @@ keeps track of things that have been added to the current <a href="reference.htm
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="staging-area" class="callout-inner">
 <h3 class="callout-title">Staging Area</h3>
 <div class="callout-content">
@@ -1041,6 +1046,7 @@ nothing to commit, working tree clean</code></pre>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="word-based-diffing" class="callout-inner">
 <h3 class="callout-title">Word-based diffing</h3>
 <div class="callout-content">
@@ -1055,6 +1061,7 @@ words using colors.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
+<span class="callout-header">Callout</span>
 <div id="directories" class="callout-inner">
 <h3 class="callout-title">Directories</h3>
 <div class="callout-content">
@@ -1110,6 +1117,7 @@ and then commit the staged changes to the repository
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="choosing-a-commit-message" class="callout-inner">
 <h3 class="callout-title">Choosing a Commit Message</h3>
 <div class="callout-content">
@@ -1140,6 +1148,7 @@ imperative.</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="committing-changes-to-git" class="callout-inner">
 <h3 class="callout-title">Committing Changes to Git</h3>
 <div class="callout-content">
@@ -1148,24 +1157,24 @@ imperative.</p>
 <ol style="list-style-type: decimal"><li><div class="codewrapper sourceCode" id="cb51">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
 </div></li>
 <li><div class="codewrapper sourceCode" id="cb52">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a>   <span class="ex">$</span> git init myfile.txt</span>
-<span id="cb52-2"><a href="#cb52-2" tabindex="-1"></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a><span class="ex">$</span> git init myfile.txt</span>
+<span id="cb52-2"><a href="#cb52-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
 </div></li>
 <li><div class="codewrapper sourceCode" id="cb53">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a>   <span class="ex">$</span> git add myfile.txt</span>
-<span id="cb53-2"><a href="#cb53-2" tabindex="-1"></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a><span class="ex">$</span> git add myfile.txt</span>
+<span id="cb53-2"><a href="#cb53-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
 </div></li>
 <li><div class="codewrapper sourceCode" id="cb54">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" tabindex="-1"></a>   <span class="ex">$</span> git commit <span class="at">-m</span> myfile.txt <span class="st">"my recent changes"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> myfile.txt <span class="st">"my recent changes"</span></span></code></pre>
 </div></li>
 </ol></div>
 </div>
@@ -1191,6 +1200,7 @@ myfile.txt.</li>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="committing-multiple-files" class="callout-inner">
 <h3 class="callout-title">Committing Multiple Files</h3>
 <div class="callout-content">
@@ -1285,6 +1295,7 @@ line:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
+<span class="callout-header">Challenge</span>
 <div id="bio-repository" class="callout-inner">
 <h3 class="callout-title">
 <code>bio</code> Repository</h3>
@@ -1350,8 +1361,8 @@ state, use <code>git diff</code>:</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
+<span class="callout-header">Key Points</span>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>
 <code>git status</code> shows the status of a repository.</li>
@@ -1399,15 +1410,17 @@ the local repository.</li>
 	
         | <a href="https://github.com/metoffice/git-novice/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/metoffice/git-novice/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/metoffice/git-novice/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
-			</div>
-			<div class="col-md-6">
+        <p>
+        <a href="https://github.com/metoffice/git-novice/blob/main/" class="external-link">Cite</a>
+        | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+		</div>
+		<div class="col-md-6">
 
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/astroDimitrios/sandpaper/tree/4aa05d502eeb4de64fbcd430b468e22dd4952718" class="external-link">sandpaper (0.16.11)</a>, <a href="https://github.com/carpentries/pegboard/tree/5e0d711121a581777d83cf270e298c933f112d52" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/astroDimitrios/varnish/tree/7c1ab925aa2bd2e6769ba68caa820231306b105b" class="external-link">varnish (1.0.5)</a></p>
-			</div>
+        <p>Built with <a href="https://github.com/astroDimitrios/sandpaper/tree/34be278fccd935ffe3c42836c517f6efc8f64028" class="external-link">sandpaper (0.20.1.9000)</a>, <a href="https://github.com/carpentries/pegboard/tree/7dc6acfdd6233c0d124a0ecf288325edc40dd96d" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/astroDimitrios/varnish/tree/5c2d7048e460689fcd39f676f7b08844bf21e676" class="external-link">varnish (1.0.9)</a></p>
+		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
 		<a href="#top">
@@ -1417,10 +1430,10 @@ the local repository.</li>
   <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "TrainingMaterial",
+  "@type": "LearningResource",
   "@id": "https://swcarpentry.github.io/git-novice/instructor/04-changes.html",
   "inLanguage": "en",
-  "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+  "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries",
   "name": "Tracking Changes",
@@ -1428,8 +1441,8 @@ the local repository.</li>
   "url": "https://swcarpentry.github.io/git-novice/instructor/04-changes.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/04-changes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2025-01-20",
-  "datePublished": "2025-04-15"
+  "dateModified": "2026-06-10",
+  "datePublished": "2026-06-10"
 }
 
   </script><script>
